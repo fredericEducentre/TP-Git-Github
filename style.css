@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f0ff; /* Bleu clair pour le fond */
+    padding: 20px;
+}
+
+.note {
+    background-color: #d1e7ff; /* Bleu pâle pour les notes */
+    border: 1px solid #85b9ff; /* Bordure bleu moyen */
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: #007bff; /* Bleu vif pour les boutons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Bleu foncé pour le hover des boutons */
+}
+
+footer {
+    background-color: #1a73e8; /* Bleu pour le footer */
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}

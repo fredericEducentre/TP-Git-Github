@@ -1,57 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes notes</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-
-        .note {
-            background-color: beige;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 15px;
-            margin: 10px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        button {
-            background-color: #ff6347;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #ff4500;
-        }
-    </style>
+    <title>My note</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Mes notes</h1>
-
+    <h1>My note</h1>
+    <input type="text" id="infoInput" placeholder="Entrez une note" />
+    <button id="addNote">Ajouter</button>
+    <button id="deleteAllButton">Erase all</button>
     <section id="infoList">
-        <div class="note">
-            Ranger ma chambre
-        </div>
-        <div class="note">
-            Faire la vaisselle
-        </div>
-        <div class="note">
-            Aller à la salle de sport
-        </div>
+    
     </section>
+    <script src="script.js"></script>
 </body>
+
+<footer>
+    <p id="blague">Une blague : Pourquoi les développeurs détestent-ils les ascenseurs ? Parce qu'ils ne supportent pas les niveaux de plus ! 😂</p>
+</footer>
+
+<script>
+    const blagues = [
+        "Pourquoi les développeurs détestent-ils les ascenseurs ? Parce qu'ils ne supportent pas les niveaux de plus ! 😂",
+        "Pourquoi les programmeurs préfèrent-ils le noir ? Parce que le blanc consomme trop d'énergie ! 😅",
+        "Pourquoi le code ne parle-t-il jamais à la machine à café ? Parce qu'il craint les boucles infinies ! ☕",
+        "Combien de développeurs faut-il pour changer une ampoule ? Aucun, c'est un problème hardware ! 💡"
+    ];
+    document.getElementById("blague").textContent = "Une blague : " + blagues[Math.floor(Math.random() * blagues.length)];
+</script>
 
 </html>
