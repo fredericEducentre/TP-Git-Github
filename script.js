@@ -51,3 +51,5 @@ document.getElementById('deleteAllButton').addEventListener('click', function ()
         document.getElementById('infoInput').value = '';
     }
 });
+
+
