@@ -18,4 +18,4 @@ function displayNotes(array) {
 }
 
 displayNotes(notes);
- 
+  
