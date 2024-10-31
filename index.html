@@ -16,7 +16,21 @@
     <section id="infoList">
     
     </section>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
+<footer>
+    <p id="blague">Une blague : Pourquoi les développeurs détestent-ils les ascenseurs ? Parce qu'ils ne supportent pas les niveaux de plus ! 😂</p>
+</footer>
+
+<script>
+    const blagues = [
+        "Pourquoi les développeurs détestent-ils les ascenseurs ? Parce qu'ils ne supportent pas les niveaux de plus ! 😂",
+        "Pourquoi les programmeurs préfèrent-ils le noir ? Parce que le blanc consomme trop d'énergie ! 😅",
+        "Pourquoi le code ne parle-t-il jamais à la machine à café ? Parce qu'il craint les boucles infinies ! ☕",
+        "Combien de développeurs faut-il pour changer une ampoule ? Aucun, c'est un problème hardware ! 💡"
+    ];
+    document.getElementById("blague").textContent = "Une blague : " + blagues[Math.floor(Math.random() * blagues.length)];
+</script>
 
 </html>
