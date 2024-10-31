@@ -29,7 +29,7 @@ displayStoredInfos();
 
 document.getElementById('addNote').addEventListener('click', function () {
     const info = document.getElementById('infoInput').value;
-    if (info) {
+    if (info && info.trim() != "") {
         let storedInfos = JSON.parse(localStorage.getItem('infos')) || [];
         storedInfos.push(info);
         localStorage.setItem('infos', JSON.stringify(storedInfos));
