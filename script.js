@@ -1,4 +1,4 @@
-ffunction displayStoredInfos() {
+
     const infoList = document.getElementById('infoList');
     infoList.innerHTML = '';
     let storedInfos = JSON.parse(localStorage.getItem('infos')) || [];
@@ -50,4 +50,4 @@ document.getElementById('deleteAllButton').addEventListener('click', function ()
         deleteAllInfos();
         document.getElementById('infoInput').value = '';
     }
-});
+
